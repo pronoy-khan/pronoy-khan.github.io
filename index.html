@@ -5,131 +5,2124 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Pronoy Khan | SEO Specialist & Digital Marketer</title>
+    <!-- Primary SEO -->
+    <title>Pronoy Khan | SEO Specialist & Organic Growth Strategist</title>
 
-    <meta name="description" content="Pronoy Khan is an SEO specialist helping DTC and e-commerce brands grow organic revenue through SEO and digital marketing.">
+    <meta
+        name="description"
+        content="Pronoy Khan is an SEO specialist helping DTC and e-commerce brands grow organic traffic, visibility and revenue through strategic SEO."
+    >
+
+    <meta
+        name="keywords"
+        content="Pronoy Khan, Pronoy Khan SEO, SEO Specialist, SEO Consultant, DTC SEO, E-commerce SEO, Organic Growth"
+    >
 
     <meta name="author" content="Pronoy Khan">
 
-    <link rel="canonical" href="https://pronoy-khan.github.io/">
+    <meta name="robots" content="index, follow">
+
+    <link
+        rel="canonical"
+        href="https://pronoy-khan.github.io/"
+    >
+
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+
+    <meta
+        property="og:title"
+        content="Pronoy Khan | SEO Specialist & Organic Growth Strategist"
+    >
+
+    <meta
+        property="og:description"
+        content="SEO specialist helping DTC and e-commerce brands grow through organic search."
+    >
+
+    <meta
+        property="og:url"
+        content="https://pronoy-khan.github.io/"
+    >
+
+    <meta property="og:site_name" content="Pronoy Khan">
+
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta
+        name="twitter:title"
+        content="Pronoy Khan | SEO Specialist & Organic Growth Strategist"
+    >
+
+    <meta
+        name="twitter:description"
+        content="SEO specialist helping DTC and e-commerce brands grow through organic search."
+    >
+
+
+    <!-- Person Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Pronoy Khan",
+        "url": "https://pronoy-khan.github.io/",
+        "jobTitle": "SEO Specialist",
+        "description": "SEO specialist helping DTC and e-commerce brands grow organic traffic and revenue.",
+        "knowsAbout": [
+            "Search Engine Optimization",
+            "Technical SEO",
+            "E-commerce SEO",
+            "DTC SEO",
+            "Content SEO",
+            "Organic Growth",
+            "Digital Marketing",
+            "AI and SEO"
+        ],
+        "sameAs": [
+            "YOUR_LINKEDIN_URL",
+            "YOUR_YOUTUBE_URL",
+            "YOUR_GITHUB_URL",
+            "YOUR_X_URL",
+            "YOUR_INSTAGRAM_URL"
+        ]
+    }
+    </script>
+
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <style>
+
+        /* =========================================================
+           RESET
+        ========================================================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        body {
+            font-family: "DM Sans", sans-serif;
+            background: #07090d;
+            color: #f4f6f8;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+
+        button {
+            font-family: inherit;
+        }
+
+
+        /* =========================================================
+           VARIABLES
+        ========================================================= */
+
+        :root {
+            --bg: #07090d;
+            --bg-soft: #0c1017;
+            --card: rgba(255,255,255,0.045);
+            --card-border: rgba(255,255,255,0.09);
+
+            --text: #f4f6f8;
+            --muted: #9aa4b2;
+            --muted-light: #c5ccd5;
+
+            --accent: #b7ff5a;
+            --accent-soft: rgba(183,255,90,0.10);
+
+            --container: 1160px;
+
+            --radius: 20px;
+        }
+
+
+        /* =========================================================
+           GLOBAL
+        ========================================================= */
+
+        .container {
+            width: min(var(--container), calc(100% - 40px));
+            margin: auto;
+        }
+
+
+        .section {
+            padding: 120px 0;
+            position: relative;
+        }
+
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            color: var(--accent);
+
+            font-size: 12px;
+            font-weight: 700;
+
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+
+            margin-bottom: 22px;
+        }
+
+
+        .section-label::before {
+            content: "";
+            width: 7px;
+            height: 7px;
+
+            background: var(--accent);
+            border-radius: 50%;
+
+            box-shadow: 0 0 18px rgba(183,255,90,0.7);
+        }
+
+
+        .section-title {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(36px, 5vw, 64px);
+
+            line-height: 1.05;
+
+            letter-spacing: -0.045em;
+
+            max-width: 800px;
+        }
+
+
+        .section-description {
+            color: var(--muted);
+
+            max-width: 650px;
+
+            font-size: 17px;
+
+            margin-top: 24px;
+        }
+
+
+        /* =========================================================
+           BACKGROUND EFFECT
+        ========================================================= */
+
+        .glow {
+            position: absolute;
+
+            width: 500px;
+            height: 500px;
+
+            border-radius: 50%;
+
+            background: rgba(183,255,90,0.055);
+
+            filter: blur(100px);
+
+            pointer-events: none;
+        }
+
+
+        .glow-one {
+            top: 0;
+            right: -250px;
+        }
+
+
+        .glow-two {
+            bottom: -250px;
+            left: -250px;
+        }
+
+
+        /* =========================================================
+           NAVBAR
+        ========================================================= */
+
+        .navbar {
+            position: fixed;
+
+            top: 0;
+            left: 0;
+            right: 0;
+
+            z-index: 1000;
+
+            border-bottom: 1px solid rgba(255,255,255,0.07);
+
+            background: rgba(7,9,13,0.72);
+
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+
+        .nav-inner {
+            height: 76px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+
+        .logo {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 18px;
+            font-weight: 800;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        .logo span {
+            color: var(--accent);
+        }
+
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+            color: var(--muted-light);
+
+            font-size: 14px;
+        }
+
+
+        .nav-links a {
+            transition: 0.25s ease;
+        }
+
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+
+        .nav-cta {
+            padding: 10px 17px;
+
+            border: 1px solid rgba(183,255,90,0.35);
+
+            border-radius: 100px;
+
+            color: var(--accent);
+
+            transition: 0.25s ease;
+        }
+
+
+        .nav-cta:hover {
+            background: var(--accent);
+            color: #071006;
+        }
+
+
+        /* =========================================================
+           HERO
+        ========================================================= */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 110px;
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        .hero-grid {
+            position: absolute;
+            inset: 0;
+
+            opacity: 0.35;
+
+            background-image:
+                linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+
+            background-size: 70px 70px;
+
+            mask-image: linear-gradient(to bottom, black, transparent 80%);
+            -webkit-mask-image: linear-gradient(to bottom, black, transparent 80%);
+        }
+
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .availability {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+
+            padding: 8px 13px;
+
+            border: 1px solid var(--card-border);
+
+            background: rgba(255,255,255,0.035);
+
+            border-radius: 100px;
+
+            color: var(--muted-light);
+
+            font-size: 13px;
+
+            margin-bottom: 30px;
+        }
+
+
+        .availability-dot {
+            width: 7px;
+            height: 7px;
+
+            border-radius: 50%;
+
+            background: var(--accent);
+
+            box-shadow: 0 0 15px var(--accent);
+        }
+
+
+        .hero h1 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(58px, 9vw, 112px);
+
+            line-height: 0.94;
+
+            letter-spacing: -0.07em;
+
+            max-width: 1000px;
+        }
+
+
+        .hero h1 .accent {
+            color: var(--accent);
+        }
+
+
+        .hero-description {
+            margin-top: 34px;
+
+            max-width: 680px;
+
+            color: var(--muted);
+
+            font-size: clamp(17px, 2vw, 20px);
+        }
+
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 13px;
+
+            margin-top: 38px;
+        }
+
+
+        .button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 14px 22px;
+
+            border-radius: 100px;
+
+            font-size: 14px;
+            font-weight: 700;
+
+            transition: 0.3s ease;
+        }
+
+
+        .button-primary {
+            background: var(--accent);
+            color: #071006;
+
+            box-shadow: 0 0 30px rgba(183,255,90,0.08);
+        }
+
+
+        .button-primary:hover {
+            transform: translateY(-2px);
+
+            box-shadow: 0 10px 35px rgba(183,255,90,0.15);
+        }
+
+
+        .button-secondary {
+            border: 1px solid var(--card-border);
+
+            background: rgba(255,255,255,0.025);
+
+            color: var(--text);
+        }
+
+
+        .button-secondary:hover {
+            border-color: rgba(183,255,90,0.35);
+            color: var(--accent);
+        }
+
+
+        .hero-bottom {
+            margin-top: 80px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            max-width: 780px;
+
+            border-top: 1px solid var(--card-border);
+        }
+
+
+        .hero-stat {
+            padding: 25px 25px 0 0;
+        }
+
+
+        .hero-stat:not(:first-child) {
+            padding-left: 25px;
+
+            border-left: 1px solid var(--card-border);
+        }
+
+
+        .hero-stat strong {
+            display: block;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        .hero-stat span {
+            color: var(--muted);
+
+            font-size: 13px;
+        }
+
+
+        /* =========================================================
+           ABOUT
+        ========================================================= */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            gap: 90px;
+
+            align-items: start;
+        }
+
+
+        .about-text {
+            color: var(--muted-light);
+
+            font-size: 18px;
+        }
+
+
+        .about-text p + p {
+            margin-top: 20px;
+        }
+
+
+        .about-highlight {
+            margin-top: 30px;
+
+            padding: 25px;
+
+            border-left: 2px solid var(--accent);
+
+            background: var(--accent-soft);
+
+            border-radius: 0 14px 14px 0;
+
+            color: var(--muted-light);
+        }
+
+
+        /* =========================================================
+           EXPERTISE
+        ========================================================= */
+
+        .expertise-grid {
+            margin-top: 60px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .expertise-card {
+            padding: 32px;
+
+            min-height: 220px;
+
+            border: 1px solid var(--card-border);
+
+            background: var(--card);
+
+            border-radius: var(--radius);
+
+            transition: 0.3s ease;
+        }
+
+
+        .expertise-card:hover {
+            transform: translateY(-5px);
+
+            border-color: rgba(183,255,90,0.25);
+
+            background: rgba(183,255,90,0.035);
+        }
+
+
+        .expertise-number {
+            color: var(--accent);
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 0.1em;
+        }
+
+
+        .expertise-card h3 {
+            margin-top: 35px;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 23px;
+
+            letter-spacing: -0.03em;
+        }
+
+
+        .expertise-card p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin-top: 10px;
+        }
+
+
+        /* =========================================================
+           RESULTS
+        ========================================================= */
+
+        .results {
+            background: #0a0e14;
+
+            border-top: 1px solid rgba(255,255,255,0.05);
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+
+        .results-grid {
+            margin-top: 60px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .result-card {
+            padding: 38px;
+
+            border: 1px solid var(--card-border);
+
+            border-radius: var(--radius);
+
+            background: rgba(255,255,255,0.025);
+        }
+
+
+        .result-number {
+            font-family: "Manrope", sans-serif;
+
+            font-size: clamp(40px, 5vw, 65px);
+
+            line-height: 1;
+
+            letter-spacing: -0.06em;
+
+            color: var(--accent);
+        }
+
+
+        .result-card h3 {
+            margin-top: 20px;
+
+            font-size: 18px;
+        }
+
+
+        .result-card p {
+            color: var(--muted);
+
+            font-size: 14px;
+
+            margin-top: 8px;
+        }
+
+
+        /* =========================================================
+           CASE STUDY
+        ========================================================= */
+
+        .case-study {
+            margin-top: 60px;
+
+            display: grid;
+
+            grid-template-columns: 0.8fr 1.2fr;
+
+            border: 1px solid var(--card-border);
+
+            border-radius: 28px;
+
+            overflow: hidden;
+
+            background: linear-gradient(
+                135deg,
+                rgba(183,255,90,0.07),
+                rgba(255,255,255,0.025)
+            );
+        }
+
+
+        .case-brand {
+            min-height: 450px;
+
+            padding: 50px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            border-right: 1px solid var(--card-border);
+        }
+
+
+        .case-brand small {
+            color: var(--accent);
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.14em;
+
+            font-size: 11px;
+
+            font-weight: 700;
+        }
+
+
+        .case-brand h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 46px;
+
+            letter-spacing: -0.05em;
+        }
+
+
+        .case-content {
+            padding: 50px;
+        }
+
+
+        .case-content h4 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 30px;
+
+            letter-spacing: -0.04em;
+        }
+
+
+        .case-content p {
+            color: var(--muted);
+
+            margin-top: 20px;
+        }
+
+
+        .case-metrics {
+            margin-top: 35px;
+
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .case-metric {
+            padding: 20px;
+
+            border: 1px solid var(--card-border);
+
+            border-radius: 14px;
+
+            background: rgba(0,0,0,0.15);
+        }
+
+
+        .case-metric strong {
+            display: block;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 25px;
+        }
+
+
+        .case-metric span {
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        /* =========================================================
+           PROCESS
+        ========================================================= */
+
+        .process-list {
+            margin-top: 60px;
+
+            border-top: 1px solid var(--card-border);
+        }
+
+
+        .process-item {
+            display: grid;
+
+            grid-template-columns: 100px 1fr 2fr;
+
+            gap: 30px;
+
+            padding: 28px 0;
+
+            border-bottom: 1px solid var(--card-border);
+        }
+
+
+        .process-number {
+            color: var(--accent);
+
+            font-size: 13px;
+
+            font-weight: 700;
+        }
+
+
+        .process-item h3 {
+            font-family: "Manrope", sans-serif;
+
+            font-size: 22px;
+
+            letter-spacing: -0.03em;
+        }
+
+
+        .process-item p {
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           CONTENT
+        ========================================================= */
+
+        .content-grid {
+            margin-top: 60px;
+
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 15px;
+        }
+
+
+        .article-card {
+            padding: 30px;
+
+            min-height: 250px;
+
+            border: 1px solid var(--card-border);
+
+            border-radius: var(--radius);
+
+            background: var(--card);
+
+            transition: 0.3s ease;
+        }
+
+
+        .article-card:hover {
+            transform: translateY(-4px);
+
+            border-color: rgba(183,255,90,0.25);
+        }
+
+
+        .article-tag {
+            color: var(--accent);
+
+            font-size: 11px;
+
+            text-transform: uppercase;
+
+            letter-spacing: 0.12em;
+
+            font-weight: 700;
+        }
+
+
+        .article-card h3 {
+            margin-top: 30px;
+
+            font-family: "Manrope", sans-serif;
+
+            font-size: 21px;
+
+            line-height: 1.25;
+
+            letter-spacing: -0.03em;
+        }
+
+
+        .article-card p {
+            margin-top: 13px;
+
+            color: var(--muted);
+
+            font-size: 14px;
+        }
+
+
+        /* =========================================================
+           CONTACT
+        ========================================================= */
+
+        .contact {
+            text-align: center;
+
+            padding-bottom: 140px;
+        }
+
+
+        .contact .section-title {
+            margin: auto;
+        }
+
+
+        .contact-description {
+            max-width: 600px;
+
+            margin: 25px auto 0;
+
+            color: var(--muted);
+
+            font-size: 17px;
+        }
+
+
+        .social-links {
+            margin-top: 40px;
+
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+        }
+
+
+        .social-link {
+            padding: 12px 18px;
+
+            border: 1px solid var(--card-border);
+
+            border-radius: 100px;
+
+            color: var(--muted-light);
+
+            font-size: 13px;
+
+            transition: 0.25s ease;
+        }
+
+
+        .social-link:hover {
+            color: var(--accent);
+
+            border-color: rgba(183,255,90,0.35);
+        }
+
+
+        /* =========================================================
+           FOOTER
+        ========================================================= */
+
+        footer {
+            border-top: 1px solid var(--card-border);
+
+            padding: 30px 0;
+
+            color: var(--muted);
+
+            font-size: 12px;
+        }
+
+
+        .footer-inner {
+            display: flex;
+
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* =========================================================
+           RESPONSIVE
+        ========================================================= */
+
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+
+            .about-grid,
+            .case-study {
+                grid-template-columns: 1fr;
+
+                gap: 0;
+            }
+
+
+            .case-brand {
+                min-height: 300px;
+
+                border-right: none;
+
+                border-bottom: 1px solid var(--card-border);
+            }
+
+
+            .expertise-grid,
+            .results-grid,
+            .content-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+
+            .process-item {
+                grid-template-columns: 60px 1fr;
+
+                gap: 15px;
+            }
+
+
+            .process-item p {
+                grid-column: 2;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .container {
+                width: min(var(--container), calc(100% - 28px));
+            }
+
+
+            .section {
+                padding: 85px 0;
+            }
+
+
+            .hero {
+                min-height: auto;
+
+                padding-top: 150px;
+
+                padding-bottom: 90px;
+            }
+
+
+            .hero h1 {
+                font-size: clamp(52px, 17vw, 78px);
+            }
+
+
+            .hero-bottom {
+                grid-template-columns: 1fr;
+
+                gap: 20px;
+            }
+
+
+            .hero-stat {
+                padding: 20px 0 !important;
+
+                border-left: none !important;
+
+                border-bottom: 1px solid var(--card-border);
+            }
+
+
+            .expertise-grid,
+            .results-grid,
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+
+            .case-brand,
+            .case-content {
+                padding: 30px;
+            }
+
+
+            .case-brand h3 {
+                font-size: 38px;
+            }
+
+
+            .case-metrics {
+                grid-template-columns: 1fr;
+            }
+
+
+            .process-item {
+                grid-template-columns: 45px 1fr;
+            }
+
+
+            .footer-inner {
+                flex-direction: column;
+            }
+
+        }
+
+    </style>
 </head>
+
 
 <body>
 
-    <header>
-        <h1>Pronoy Khan</h1>
 
-        <p>
-            SEO Specialist helping DTC & e-commerce brands grow organic revenue.
-        </p>
+    <!-- =========================================================
+         NAVIGATION
+    ========================================================== -->
 
-        <nav>
-            <a href="#about">About</a>
-            <a href="#expertise">Expertise</a>
-            <a href="#experience">Experience</a>
-            <a href="#case-studies">Case Studies</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="navbar">
+
+        <div class="container nav-inner">
+
+            <a href="#top" class="logo">
+                PRONOY<span>.</span>
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="#about">About</a>
+
+                <a href="#expertise">Expertise</a>
+
+                <a href="#results">Results</a>
+
+                <a href="#case-studies">Case Studies</a>
+
+                <a href="#contact" class="nav-cta">
+                    Let's Talk
+                </a>
+
+            </nav>
+
+        </div>
+
     </header>
 
 
-    <main>
 
-        <section id="about">
-            <h2>About Pronoy Khan</h2>
+    <main id="top">
 
-            <p>
-                I'm Pronoy Khan, an SEO specialist with 6+ years of experience
-                helping DTC and e-commerce brands grow through organic search.
-            </p>
 
-            <p>
-                My work focuses on SEO strategy, technical SEO, content,
-                e-commerce SEO, and organic growth.
-            </p>
+        <!-- =====================================================
+             HERO
+        ====================================================== -->
+
+        <section class="hero">
+
+            <div class="hero-grid"></div>
+
+            <div class="glow glow-one"></div>
+
+
+            <div class="container hero-content">
+
+                <div class="availability">
+
+                    <span class="availability-dot"></span>
+
+                    SEO Specialist · Organic Growth
+
+                </div>
+
+
+                <h1>
+
+                    I help brands
+
+                    <span class="accent">
+                        grow
+                    </span>
+
+                    through search.
+
+                </h1>
+
+
+                <p class="hero-description">
+
+                    I'm Pronoy Khan, an SEO specialist focused on helping
+                    DTC and e-commerce brands turn organic search into a
+                    predictable growth channel.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a
+                        href="#case-studies"
+                        class="button button-primary"
+                    >
+                        View My Work
+                        →
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="button button-secondary"
+                    >
+                        Connect With Me
+                    </a>
+
+                </div>
+
+
+                <div class="hero-bottom">
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            6+
+                        </strong>
+
+                        <span>
+                            Years in SEO
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            DTC
+                        </strong>
+
+                        <span>
+                            & E-commerce Focus
+                        </span>
+
+                    </div>
+
+
+                    <div class="hero-stat">
+
+                        <strong>
+                            Organic
+                        </strong>
+
+                        <span>
+                            Growth First
+                        </span>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section id="expertise">
-            <h2>SEO Expertise</h2>
 
-            <ul>
-                <li>Technical SEO</li>
-                <li>E-commerce SEO</li>
-                <li>DTC SEO</li>
-                <li>Keyword Research</li>
-                <li>Content SEO</li>
-                <li>AI + SEO</li>
-                <li>Organic Growth Strategy</li>
-            </ul>
+        <!-- =====================================================
+             ABOUT
+        ====================================================== -->
+
+        <section class="section" id="about">
+
+            <div class="glow glow-two"></div>
+
+
+            <div class="container">
+
+                <div class="about-grid">
+
+
+                    <div>
+
+                        <span class="section-label">
+                            About Me
+                        </span>
+
+                        <h2 class="section-title">
+                            SEO is more than rankings.
+                        </h2>
+
+                    </div>
+
+
+                    <div class="about-text">
+
+                        <p>
+
+                            I'm Pronoy Khan, an SEO specialist with 6+
+                            years of experience helping brands build
+                            sustainable organic growth.
+
+                        </p>
+
+
+                        <p>
+
+                            My approach combines technical SEO,
+                            content strategy, search intent, e-commerce
+                            optimization and data-driven decision making.
+
+                        </p>
+
+
+                        <p>
+
+                            I work primarily with DTC and e-commerce
+                            businesses that want organic search to
+                            become a meaningful source of traffic,
+                            customers and revenue.
+
+                        </p>
+
+
+                        <div class="about-highlight">
+
+                            <strong>
+                                My philosophy:
+                            </strong>
+
+                            <br>
+
+                            Don't optimize for rankings alone.
+                            Build search visibility that contributes
+                            to real business growth.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section id="experience">
-            <h2>Experience</h2>
 
-            <p>
-                6+ years of experience in SEO and digital marketing.
-            </p>
+        <!-- =====================================================
+             EXPERTISE
+        ====================================================== -->
 
-            <p>
-                Specialized in working with DTC, e-commerce, health,
-                wellness and skincare brands.
-            </p>
+        <section class="section" id="expertise">
+
+            <div class="container">
+
+
+                <span class="section-label">
+                    Expertise
+                </span>
+
+
+                <h2 class="section-title">
+                    The areas I use to create organic growth.
+                </h2>
+
+
+                <p class="section-description">
+
+                    A practical SEO approach focused on finding
+                    opportunities, building visibility and turning
+                    search demand into business results.
+
+                </p>
+
+
+                <div class="expertise-grid">
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Technical SEO
+                        </h3>
+
+                        <p>
+                            Crawling, indexing, architecture,
+                            internal linking, Core Web Vitals and
+                            technical search performance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            02
+                        </span>
+
+                        <h3>
+                            E-commerce SEO
+                        </h3>
+
+                        <p>
+                            Product, category and collection
+                            optimization designed to capture
+                            commercial search demand.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            03
+                        </span>
+
+                        <h3>
+                            DTC SEO
+                        </h3>
+
+                        <p>
+                            SEO strategies designed around
+                            customer journeys, product demand
+                            and organic revenue.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Content SEO
+                        </h3>
+
+                        <p>
+                            Search-focused content strategies
+                            built around intent, topical relevance
+                            and useful information.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            05
+                        </span>
+
+                        <h3>
+                            SEO Strategy
+                        </h3>
+
+                        <p>
+                            Turning search data into prioritized
+                            SEO roadmaps that focus on the highest
+                            potential opportunities.
+                        </p>
+
+                    </article>
+
+
+                    <article class="expertise-card">
+
+                        <span class="expertise-number">
+                            06
+                        </span>
+
+                        <h3>
+                            AI + SEO
+                        </h3>
+
+                        <p>
+                            Exploring practical ways to combine
+                            AI workflows with modern SEO research,
+                            content and analysis.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section id="case-studies">
-            <h2>Case Studies</h2>
 
-            <h3>Aura Clarity</h3>
+        <!-- =====================================================
+             RESULTS
+        ====================================================== -->
 
-            <p>
-                SEO growth case study demonstrating significant organic
-                traffic growth through an SEO-focused strategy.
-            </p>
+        <section class="section results" id="results">
 
-            <p>
-                Organic traffic increased by 117% in 90 days with zero
-                advertising spend.
-            </p>
+            <div class="container">
+
+
+                <span class="section-label">
+                    Selected Results
+                </span>
+
+
+                <h2 class="section-title">
+                    Strategy should show up in the numbers.
+                </h2>
+
+
+                <p class="section-description">
+
+                    A snapshot of the kind of organic growth
+                    SEO can create when strategy and execution
+                    work together.
+
+                </p>
+
+
+                <div class="results-grid">
+
+
+                    <div class="result-card">
+
+                        <div class="result-number">
+                            +117%
+                        </div>
+
+                        <h3>
+                            Organic Traffic
+                        </h3>
+
+                        <p>
+                            Growth achieved within 90 days
+                            through an SEO-focused strategy.
+                        </p>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <div class="result-number">
+                            90
+                        </div>
+
+                        <h3>
+                            Days
+                        </h3>
+
+                        <p>
+                            Focused execution period used to
+                            generate measurable organic growth.
+                        </p>
+
+                    </div>
+
+
+                    <div class="result-card">
+
+                        <div class="result-number">
+                            $0
+                        </div>
+
+                        <h3>
+                            Ad Spend
+                        </h3>
+
+                        <p>
+                            Growth driven through organic search
+                            rather than paid advertising.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
         </section>
 
 
-        <section id="contact">
-            <h2>Connect With Pronoy Khan</h2>
 
-            <p>
-                Find me online:
-            </p>
+        <!-- =====================================================
+             CASE STUDIES
+        ====================================================== -->
 
-            <ul>
-                <li>
-                    <a href="YOUR_LINKEDIN_URL">LinkedIn</a>
-                </li>
+        <section class="section" id="case-studies">
 
-                <li>
-                    <a href="YOUR_YOUTUBE_URL">YouTube</a>
-                </li>
+            <div class="container">
 
-                <li>
-                    <a href="YOUR_GITHUB_URL">GitHub</a>
-                </li>
 
-                <li>
-                    <a href="YOUR_X_URL">X</a>
-                </li>
-            </ul>
+                <span class="section-label">
+                    Case Study
+                </span>
+
+
+                <h2 class="section-title">
+                    Work that connects SEO to growth.
+                </h2>
+
+
+                <div class="case-study">
+
+
+                    <div class="case-brand">
+
+                        <small>
+                            Featured Project
+                        </small>
+
+
+                        <h3>
+                            Aura<br>
+                            Clarity
+                        </h3>
+
+
+                        <span>
+                            DTC · Health · E-commerce
+                        </span>
+
+                    </div>
+
+
+                    <div class="case-content">
+
+
+                        <h4>
+                            Growing organic visibility
+                            without relying on ads.
+                        </h4>
+
+
+                        <p>
+
+                            A focused SEO strategy was used to
+                            improve organic visibility and create
+                            sustainable search traffic for a
+                            DTC e-commerce brand.
+
+                        </p>
+
+
+                        <div class="case-metrics">
+
+
+                            <div class="case-metric">
+
+                                <strong>
+                                    +117%
+                                </strong>
+
+                                <span>
+                                    Organic traffic
+                                </span>
+
+                            </div>
+
+
+                            <div class="case-metric">
+
+                                <strong>
+                                    90 Days
+                                </strong>
+
+                                <span>
+                                    Growth period
+                                </span>
+
+                            </div>
+
+
+                            <div class="case-metric">
+
+                                <strong>
+                                    $0
+                                </strong>
+
+                                <span>
+                                    Ad spend
+                                </span>
+
+                            </div>
+
+
+                            <div class="case-metric">
+
+                                <strong>
+                                    Organic
+                                </strong>
+
+                                <span>
+                                    Growth channel
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </section>
+
+
+
+        <!-- =====================================================
+             PROCESS
+        ====================================================== -->
+
+        <section class="section">
+
+            <div class="container">
+
+
+                <span class="section-label">
+                    My Approach
+                </span>
+
+
+                <h2 class="section-title">
+                    Research first. Execute with purpose.
+                </h2>
+
+
+                <div class="process-list">
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Research
+                        </h3>
+
+                        <p>
+                            Understand the business, customers,
+                            competitors and search landscape before
+                            deciding what to optimize.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Strategy
+                        </h3>
+
+                        <p>
+                            Identify the highest-impact opportunities
+                            and turn them into a prioritized SEO roadmap.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Execution
+                        </h3>
+
+                        <p>
+                            Implement technical, content and
+                            on-site improvements with a focus on
+                            measurable outcomes.
+                        </p>
+
+                    </div>
+
+
+                    <div class="process-item">
+
+                        <span class="process-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Measure
+                        </h3>
+
+                        <p>
+                            Monitor organic visibility, traffic,
+                            rankings and business impact to understand
+                            what is actually working.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTENT
+        ====================================================== -->
+
+        <section class="section" id="articles">
+
+            <div class="container">
+
+
+                <span class="section-label">
+                    Insights
+                </span>
+
+
+                <h2 class="section-title">
+                    What I'm thinking about.
+                </h2>
+
+
+                <p class="section-description">
+
+                    I'll be publishing practical ideas around
+                    SEO, AI, e-commerce and organic growth here.
+
+                </p>
+
+
+                <div class="content-grid">
+
+
+                    <article class="article-card">
+
+                        <span class="article-tag">
+                            SEO
+                        </span>
+
+                        <h3>
+                            How I approach SEO for DTC
+                            e-commerce brands
+                        </h3>
+
+                        <p>
+                            A practical framework for identifying
+                            the organic growth opportunities that
+                            matter most.
+                        </p>
+
+                    </article>
+
+
+                    <article class="article-card">
+
+                        <span class="article-tag">
+                            AI + SEO
+                        </span>
+
+                        <h3>
+                            Where AI fits into a modern
+                            SEO workflow
+                        </h3>
+
+                        <p>
+                            Exploring practical applications of AI
+                            for research, analysis and SEO execution.
+                        </p>
+
+                    </article>
+
+
+                    <article class="article-card">
+
+                        <span class="article-tag">
+                            E-commerce
+                        </span>
+
+                        <h3>
+                            The SEO fundamentals every
+                            e-commerce brand needs
+                        </h3>
+
+                        <p>
+                            The technical and strategic foundations
+                            that support sustainable organic visibility.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+             CONTACT
+        ====================================================== -->
+
+        <section class="section contact" id="contact">
+
+            <div class="container">
+
+
+                <span class="section-label">
+                    Connect
+                </span>
+
+
+                <h2 class="section-title">
+                    Let's connect.
+                </h2>
+
+
+                <p class="contact-description">
+
+                    Follow my work, connect with me professionally,
+                    or reach out if you'd like to talk SEO,
+                    e-commerce or organic growth.
+
+                </p>
+
+
+                <div class="social-links">
+
+
+                    <!-- Replace these URLs -->
+
+                    <a
+                        href="YOUR_LINKEDIN_URL"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        LinkedIn ↗
+                    </a>
+
+
+                    <a
+                        href="YOUR_YOUTUBE_URL"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        YouTube ↗
+                    </a>
+
+
+                    <a
+                        href="YOUR_GITHUB_URL"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        GitHub ↗
+                    </a>
+
+
+                    <a
+                        href="YOUR_X_URL"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        X ↗
+                    </a>
+
+
+                    <a
+                        href="YOUR_INSTAGRAM_URL"
+                        class="social-link"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        Instagram ↗
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
 
     </main>
 
 
+
+    <!-- =========================================================
+         FOOTER
+    ========================================================== -->
+
     <footer>
-        <p>
-            © 2026 Pronoy Khan. All rights reserved.
-        </p>
+
+        <div class="container footer-inner">
+
+            <span>
+                © 2026 Pronoy Khan
+            </span>
+
+
+            <span>
+                SEO · Organic Growth · E-commerce
+            </span>
+
+        </div>
+
     </footer>
+
 
 </body>
 </html>
